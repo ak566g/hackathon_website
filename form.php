@@ -434,7 +434,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
             if(mysqli_stmt_execute($stmt))
             {
-                header("location: thankyou.php");
+                header("location: thankyou.php"); 
             }
             else
             {
@@ -456,6 +456,7 @@ function test_data($data)
     return $data;
 }
 
+
 ?>
 
 
@@ -469,6 +470,7 @@ function test_data($data)
     <title>Hackathon | Registration Form</title>
     <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="css/stylesforms.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <div class="main">
